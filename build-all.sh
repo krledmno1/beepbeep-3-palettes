@@ -9,7 +9,8 @@ popd () {
     command popd "$@" > /dev/null
 }
 echo "This script will build all the palettes in this folder."
-for dir in */
+palletes="Apache Concurrency Tuples Diagnostics Dsl Fol Fsm Gnuplot Graphviz Http Jdbc Json Ltl Mtnp Provenance Serialization Signal WebSocket Xml"
+for dir in $palletes
 do
  if [[ $dir == "lib/" ]]; then continue; fi
  echo Building $dir...
